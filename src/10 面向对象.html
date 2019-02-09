@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script>-->
+        <!--class User {-->
+            <!--constructor(name,password){-->
+                <!--this.name = name ;-->
+                <!--this.password = password ;-->
+            <!--}-->
+            <!--showname(){-->
+                <!--return this.name;-->
+            <!--}-->
+            <!--showpassword(){-->
+                <!--return this.password;-->
+            <!--}-->
+        <!--}-->
+
+        <!--class VipUser extends User {-->
+            <!--constructor(name,password,level){-->
+                <!--super(name,password);-->
+                <!--this.level = level ;-->
+            <!--}-->
+            <!--showlevel(){-->
+                <!--return this.level ;-->
+            <!--}-->
+        <!--}-->
+
+        <!--var u1 = new User('zhangsan',123456);-->
+        <!--alert(u1.showname());-->
+        <!--alert(u1.showpassword())-->
+
+        <!--var Vipu1 = new VipUser('王麻子',23411,90);-->
+        <!--alert(Vipu1.showname())-->
+        <!--alert(Vipu1.showlevel())-->
+
+    <!--</script>-->
+
+
+    <script>
+        function User (name,password){
+            this.name = name ;
+            this.password = password ;
+        }
+        User.prototype.showname = function () {
+            return this.name;
+        }
+        User.prototype.showpassword = function () {
+            return this.password;
+        }
+        var u1 = new User('zhangsan',123456);
+        alert(u1.showname());
+        alert(u1.showpassword())
+    </script>
+</head>
+<body>
+
+</body>
+</html>

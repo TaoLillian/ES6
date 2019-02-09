@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let a =[100,200,100,200]
+       let result = a.reduce(function (tmp,init,index) {
+           if(index==a.length-1){return (tmp+init)/a.length}
+           else return tmp+init
+
+        })
+        console.log(result)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

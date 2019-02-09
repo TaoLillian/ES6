@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let a = [90,67,32,10,99]
+
+        // let result=a.filter(function (item) {
+        //     return item%3==0
+        // })
+        //化简之后
+        let result=a.filter(item => item%3==0)
+        alert(result)
+
+        let goods = [
+            {name:'皮鞋',price:320},
+            {name:'耳环',price:64},
+            {name:'牙签',price:3},
+            {name:'毛衣',price:780},
+        ]
+
+        let chose = goods.filter(item=>item.price>100)
+        console.log(chose)
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
